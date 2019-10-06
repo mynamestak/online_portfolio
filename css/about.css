@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6rem;
+    margin: 20px;
+    color: #707070;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 48px;
+    margin-bottom: 35px;
+}
+
+.navbar_each a {
+    text-decoration: none;
+    color: #707070;
+}
+
+.navbar_each a:visited {
+    color: #707070;
+}
+
+.contents {
+    display: grid;
+    grid-gap: 35px;
+    margin-bottom: 35px;
+}
+
+.greeting h3 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.contents .greeting-image {
+    max-width: 370px;
+    margin: 0 auto;
+}
+
+.greeting-image img {
+    width: 100%;
+}
+
+.intro p {
+    margin-bottom: 16px;
+}
+
+.contents .message {
+    width: 200px;
+    height: 50px;
+    border: 2px solid #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message a {
+    color: #707070;
+    text-decoration: none;
+}
+
+.message a:visited {
+    color: #707070;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div{
+    font-size: 1rem;
+    margin: 0 auto 10px auto;
+}
+
+.sns_icons a {
+    color: #707070;
+}
+
+.sns_icons a:visited {
+    color: #707070;
+}
+
+.sns_icons .instagram:hover {
+    color: #e1306c;
+    transition: 0.25s ease;
+}
+
+.sns_icons .mail:hover {
+    color: #477EBA;
+    transition: 0.25s ease;
+}
+
+footer p {
+    margin: 0 auto;
+}
+
+/* tablet size  */
+@media screen and (min-width:769px) {
+    body {
+        margin: 25px;
+    }
+
+    nav {
+        margin-bottom: 50px;
+    }
+
+    nav span {
+        font-size: 1.25rem;
+    }
+
+    .contents {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin: 0 80px;
+    }
+
+    .greeting h3 {
+        font-size: 1.25rem;
+    }
+
+    .greeting p {
+        margin: 0.5rem;
+        font-size: 1.5rem;
+    }    
+
+    .contents .message {
+        margin: 0 auto;
+    }
+
+    footer div {
+        font-size: 1.25rem;
+    }
+
+    footer p {
+        font-size: 1.25rem;
+    }
+}
+
+/* bigger than pc */
+@media screen and (min-width:1024px) {
+    body {
+        margin: 25px 40px;
+    }
+
+    nav {
+        margin-bottom: 80px;
+    }
+
+    .greeting h3 {
+        font-size: 1.75rem;
+        margin-bottom: 20px;
+    }
+
+    .contents {
+        margin: 0 120px;
+        margin-bottom: 50px;
+    }
+
+
+
+}

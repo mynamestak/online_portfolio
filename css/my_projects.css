@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    color: #707070;
+    line-height: 1.6rem;
+}
+/* ナビパート */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+nav span {
+    font-size: 1rem;
+}
+
+nav .navbar_left {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar_each a {
+    text-decoration: none;
+    color: #707070;
+}
+
+.navbar_each a:visited {
+    color: #707070;
+}
+
+/* ナビから下 */
+.contents {
+    margin-bottom: 35px;
+    display: grid;
+    grid-gap: 70px;
+}
+
+/* タイトルとタイトル画像 */
+.title h3 {
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+.title .title_dscrptn {
+    margin-bottom: 28px;
+}
+
+.title .contents_title {
+    margin-bottom: 28px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 370px;
+}
+
+.contents_title img {
+    width: 100%;
+}
+
+.title p {
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+
+.title a {
+    text-decoration: none;
+    color: #707070;
+}
+
+.title a:visited {
+    color: #707070;
+}
+
+/* ここからプロセス全てに効くスタイル*/
+.contents .projects {
+    display: grid;
+    grid-gap: 50px;
+}
+
+
+.projects .project-each {
+    max-width: 370px;
+}
+
+.project-each img {
+    width: 100%;
+}
+
+
+
+/* aside */
+.contact {
+    display: flex;
+    grid-gap: 35px;
+    justify-content: center;
+}
+
+.contact .contact-button {
+    border: 2px solid #555;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 370px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #707070;
+}
+
+.contact a:visited {
+    color: #707070;
+}
+
+/* other works */
+.otherworks p {
+    margin: 0;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.otherworks .otherworks-img {
+    display: grid;
+    grid-gap: 35px;
+}
+
+.otherworks-img .otherworks-img-each {
+    max-width: 370px;
+    margin: 0 auto;
+}
+
+.otherworks-img-each img {
+    width: 100%;
+    outline: 2px solid white;
+    transition: 0.2s ease-out;
+}
+
+.otherworks-img-each img:hover {
+    outline: 2px solid #555;
+    transition: 0.2s ease-out;
+}
+
+/* フッター */
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div{
+    font-size: 1rem;
+    margin: 0 auto 10px auto;
+}
+.sns_icons a {
+    color: #707070;
+}
+
+.sns_icons a:visited {
+    color: #707070;
+}
+
+.sns_icons .instagram:hover {
+    color: #e1306c;
+    transition: 0.25s ease;
+}
+
+.sns_icons .mail:hover {
+    color: #477EBA;
+    transition: 0.25s ease;
+}
+
+footer p {
+    margin: 0 auto;
+}
+
+/* tablet size  */
+@media screen and (min-width:769px) {
+    body {
+        margin: 25px;
+    }
+
+    nav span {
+        font-size: 1.25rem;
+    }
+
+    .contents .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .otherworks .otherworks-img {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    footer div {
+        font-size: 1.25rem;
+    }
+
+    footer p {
+        font-size: 1.25rem;
+    }
+}
+
+/* bigger than pc */
+@media screen and (min-width:1024px) {
+    body {
+        margin: 25px 40px;
+    }
+
+    .contents {
+        margin: 0 150px;
+        margin-bottom: 50px;
+    }
+
+    .contents .projects {
+        justify-items: center;
+    }
+
+    .projects .project-each {
+        max-width: 500px;
+    }
+}

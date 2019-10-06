@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6rem;
+    margin: 20px;
+    color: #707070;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+nav span {
+    font-size: 1rem;
+}
+
+nav .navbar_left {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar_each a {
+    text-decoration: none;
+    color: #707070;
+}
+
+.navbar_each a:visited {
+    color: #707070;
+}
+
+.contents {
+    margin-bottom: 120px;
+}
+
+.contents h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-weight: 500;
+}
+
+.works {
+    display: grid;
+    grid-gap: 35px;
+    justify-items: center;
+}
+
+.works .thumnail--each {
+    max-width: 370px;
+}
+
+.thumnail--each img {
+    width: 100%;
+    outline: 2px solid white;
+    transition: 0.2s ease-out;
+}
+
+.thumnail--each img:hover {
+    outline: 2px solid #555;
+    transition: 0.2s ease;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div{
+    font-size: 1rem;
+    margin: 0 auto 10px auto;
+}
+
+.sns_icons a {
+    color: #707070;
+}
+
+.sns_icons a:visited {
+    color: #707070;
+}
+
+.sns_icons .instagram:hover {
+    color: #e1306c;
+    transition: 0.25s ease;
+}
+
+.sns_icons .mail:hover {
+    color: #477EBA;
+    transition: 0.25s ease;
+}
+
+footer p {
+    margin: 0 auto;
+}
+
+/* tablet size  */
+@media screen and (min-width:769px) {
+    body {
+        margin: 25px;
+    }
+
+    nav {
+        margin-bottom: 50px;
+    }
+
+    nav span {
+        font-size: 1.25rem;
+    }
+
+    .works {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer div {
+        font-size: 1.25rem;
+    }
+
+    footer p {
+        font-size: 1.25rem;
+    }
+}
+
+/* bigger than pc */
+@media screen and (min-width:1024px) {
+    body {
+        margin: 25px 40px;
+    }
+
+    nav {
+        margin-bottom: 80px;
+    }
+
+    .works {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
